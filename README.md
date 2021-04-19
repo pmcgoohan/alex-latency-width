@@ -12,3 +12,14 @@ For an explanation, consider this idealized view of the network:
 - This tells us how accurately any node can know the true objective transaction order. 
 
 The result is proof that the mean +  stdev of the error term is equivalent to the latency width.
+
+Sample output:
+```
+error term of each node's view of every transaction timestamp:
+avg error = 521.4325689391673 ms
+stdev error = 577.3502691896257 ms
+avg + stddev = 1000 ms <<< true timestamps are unknowable within this time
+latency width = 1000 ms <<< the above is equivalent to the latency width
+which is mathematical proof that randomizing transaction order within the latency width of a trustless network does not lose information
+press any key to exit
+```
