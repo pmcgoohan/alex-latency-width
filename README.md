@@ -10,3 +10,5 @@ For an explanation, consider this idealized view of the network:
 - For each node and each transaction we compare the node's view of the transaction timestamp (arrival time) with the objective view (send time).
 - We then calculate the mean and standard deviation of the error term.
 - This tells us how accurately any node can know the true objective transaction order. 
+
+The result is proof that the mean +  stdev of the error term is equivalent to the latency width.
