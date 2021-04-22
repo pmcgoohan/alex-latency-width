@@ -1,6 +1,4 @@
 # alex-latency-window
-Mathematical proof that true transaction order is unknowable within the latency width of a trustless network.
-
 Written to support the thesis in 'Targeting Zero MEV - A Content Layer Solution' that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order.
 
 For an explanation, consider this idealized view of the network:
