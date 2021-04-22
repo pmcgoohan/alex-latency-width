@@ -10,7 +10,7 @@ namespace AlexLatencyWindow
 {
     /// <summary>
     /// Mathematical proof that true transaction order is unknowable within the latency width of a trustless network.
-    /// Written to support the thesis in 'Targeting Zero MEV - A Content Layer Solution' that randomizing transaction order within the latency width of a trustless network is ideal.    
+    /// Written to support the thesis in 'Targeting Zero MEV - A Content Layer Solution' that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order.
     ///
     /// For an explanation, consider this idealized view of the network:
     /// - Nodes are distributed around the world and latency is linear to the geographic distance between two nodes.
@@ -95,7 +95,7 @@ namespace AlexLatencyWindow
             Console.WriteLine("stdev error = {0} ms", stdevErr);
             Console.WriteLine("avg + stddev = {0} ms <<< true timestamps are unknowable within this time", GlobalLatencyMs);
             Console.WriteLine("latency width = {0} ms <<< the above is equivalent to the latency width", GlobalLatencyMs);
-            Console.WriteLine("which is mathematical proof that randomizing transaction order within the latency width of a trustless network does not lose information");
+            Console.WriteLine("which is mathematical proof that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order");
         }
     }
 }
