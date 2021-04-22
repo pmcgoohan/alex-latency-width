@@ -1,7 +1,7 @@
 # alex-latency-window
 Mathematical proof that true transaction order is unknowable within the latency width of a trustless network.
 
-Written to support the thesis in 'Targeting Zero MEV - A Content Layer Solution' that randomizing transaction order within the latency width of a trustless network is ideal.
+Written to support the thesis in 'Targeting Zero MEV - A Content Layer Solution' that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order.
 
 For an explanation, consider this idealized view of the network:
 - Nodes are distributed around the world and latency is linear to the geographic distance between two nodes.
@@ -11,7 +11,7 @@ For an explanation, consider this idealized view of the network:
 - We then calculate the mean and standard deviation of the error term.
 - This tells us how accurately any node can know the true objective transaction order. 
 
-The result is proof that the mean +  stdev of the error term is equivalent to the latency width.
+The result is proof that the mean + stdev of the error term (random walk) is equivalent to the latency width.
 
 Sample output:
 ```
@@ -20,6 +20,6 @@ avg error = 521.4325689391673 ms
 stdev error = 577.3502691896257 ms
 avg + stddev = 1000 ms <<< true timestamps are unknowable within this time
 latency width = 1000 ms <<< the above is equivalent to the latency width
-which is mathematical proof that randomizing transaction order within the latency width of a trustless network does not lose information
+which is mathematical proof that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order
 press any key to exit
 ```
