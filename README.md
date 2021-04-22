@@ -18,6 +18,6 @@ avg error = 521.4325689391673 ms
 stdev error = 577.3502691896257 ms
 avg + stddev = 1000 ms <<< true timestamps are unknowable within this time
 latency width = 1000 ms <<< the above is equivalent to the latency width
-which is mathematical proof that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order
+which is proof that randomizing transaction order within the latency width of a trustless network is as fair as any single honest node's view of the transaction order
 press any key to exit
 ```
